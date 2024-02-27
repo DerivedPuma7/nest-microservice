@@ -68,8 +68,4 @@ export class CheckoutsService {
     checkout.fail();
     await this.checkoutRepo.save(checkout);
   }
-
-  remove(id: number) {
-    return `This action removes a #${id} checkout`;
-  }
 }
