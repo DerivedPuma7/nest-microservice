@@ -1,6 +1,5 @@
 import { Injectable } from '@nestjs/common';
 import { CreateCheckoutDto } from './dto/create-checkout.dto';
-import { UpdateCheckoutDto } from './dto/update-checkout.dto';
 import { externalFakeProducts } from './products/productsList';
 import { Checkout } from './entities/checkout.entity';
 import { Repository } from 'typeorm';
