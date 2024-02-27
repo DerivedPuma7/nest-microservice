@@ -27,7 +27,7 @@ export class CheckoutProduct {
   id: number;
 
   @Column()
-  name: number;
+  name: string;
 
   @Column()
   description: string;
