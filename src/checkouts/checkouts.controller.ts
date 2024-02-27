@@ -22,8 +22,13 @@ export class CheckoutsController {
     return this.checkoutsService.findOne(+id);
   }
 
-  @Delete(':id')
-  remove(@Param('id') id: string) {
-    return this.checkoutsService.remove(+id);
+  @Post(':id/pay')
+  pay(@Param('id') id: string) {
+    return this.checkoutsService.pay(+id);
+  }
+
+  @Post(':id/fail')
+  fail(@Param('id') id: string) {
+    return this.checkoutsService.fail(+id);
   }
 }
