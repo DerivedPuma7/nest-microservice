@@ -22,11 +22,6 @@ export class CheckoutsController {
     return this.checkoutsService.findOne(+id);
   }
 
-  @Patch(':id')
-  update(@Param('id') id: string, @Body() updateCheckoutDto: UpdateCheckoutDto) {
-    return this.checkoutsService.update(+id, updateCheckoutDto);
-  }
-
   @Delete(':id')
   remove(@Param('id') id: string) {
     return this.checkoutsService.remove(+id);
