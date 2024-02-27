@@ -48,8 +48,10 @@ export class CheckoutsService {
     return await this.checkoutRepo.find();
   }
 
-  findOne(id: number) {
-    return `This action returns a #${id} checkout`;
+  async findOne(id: number) {
+    return await this.checkoutRepo.findOneByOrFail({
+      id
+    });
   }
 
   update(id: number, updateCheckoutDto: UpdateCheckoutDto) {
