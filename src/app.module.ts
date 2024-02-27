@@ -3,7 +3,7 @@ import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { CheckoutsModule } from './checkouts/checkouts.module';
 import { TypeOrmModule } from '@nestjs/typeorm';
-import { Checkout } from './checkouts/entities/checkout.entity';
+import { Checkout, CheckoutItem, CheckoutProduct } from './checkouts/entities/checkout.entity';
 
 @Module({
   imports: [
@@ -13,7 +13,7 @@ import { Checkout } from './checkouts/entities/checkout.entity';
       username: 'root',
       password: 'root',
       database: 'nest',
-      entities: [Checkout],
+      entities: [Checkout, CheckoutItem, CheckoutProduct],
       synchronize: true,
       logging: true
     }),
