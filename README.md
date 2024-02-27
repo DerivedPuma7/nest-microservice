@@ -71,3 +71,15 @@ Nest is an MIT-licensed open source project. It can grow thanks to the sponsors 
 ## License
 
 Nest is [MIT licensed](LICENSE).
+
+
+## Conect to database
+- subir banco
+  > docker compose up
+- identificar o container do mysql em execução
+  > docker ps
+- entrar no container do mysql
+  > docker exec -it container_id bash
+- usar cli do mysql para consultar o banco
+  > mysql -uroot -proot
+- pronto, basta executar os comandos sql
