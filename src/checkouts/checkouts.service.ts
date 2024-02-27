@@ -44,8 +44,8 @@ export class CheckoutsService {
     return checkout;
   }
 
-  findAll() {
-    return `This action returns all checkouts`;
+  async findAll() {
+    return await this.checkoutRepo.find();
   }
 
   findOne(id: number) {
